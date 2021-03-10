@@ -1,0 +1,23 @@
+#navigation{
+    nav{
+        position: absolute;
+        margin-left: 4rem;
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            li{
+                list-style: none;
+                list-style-type: none;
+                padding: 1.5rem 1rem;
+                border-bottom: none;
+                a{
+                    color: #ccc;
+                    font-size: 22px;
+                    cursor: pointer;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
