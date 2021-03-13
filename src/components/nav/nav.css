@@ -1,0 +1,32 @@
+#navigation nav {
+  position: absolute;
+  margin-left: 4rem;
+}
+
+#navigation nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#navigation nav ul li {
+  list-style: none;
+  list-style-type: none;
+  padding: 1.5rem 1rem;
+  border-bottom: none;
+}
+
+#navigation nav ul li a {
+  color: #ccc;
+  font-size: 22px;
+  cursor: pointer;
+  text-decoration: none;
+}
+/*# sourceMappingURL=nav.css.map */
