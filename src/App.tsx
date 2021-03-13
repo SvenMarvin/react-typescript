@@ -1,22 +1,3 @@
-<<<<<<< HEAD
-import React, {useState, useContext} from 'react';
-import './App.css';
-//Components
-import Layout from './container/ui/layout/Layout';
-import Nav from './components/nav/Nav';
-
-
-const App: React.FC =() => {
-
-
-
-  return (
-      <div className="App">
-        <Layout isImage={true}>
-          <Nav/>
-        </Layout>
-      </div>
-=======
 import React, { useContext } from "react";
 import "./App.scss";
 //Components
@@ -49,7 +30,6 @@ const App: React.FC = () => {
         </div>
       </Layout>
     </div>
->>>>>>> release/0.0.2
   );
 };
 
