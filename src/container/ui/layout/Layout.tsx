@@ -1,15 +1,20 @@
 import React from 'react'
 import './layout.scss';
 import bgImage from '../../../assets/images/bgImage.jpg'
-
+import Nav from '../../../components/nav/Nav';
 
 interface layoutProps {
     isImage: boolean;
+    color: string | null;
 }
 
 const Layout: React.FC<layoutProps> = props => {
+    const style: any = {
+        backgroundColor: props.color,
+        minHeight: '100vh'
+    }
 
-    let bgImageContainer = <div>{props.children}</div>;
+    let bgImageContainer = <div style={style}>{props.children}</div>;
     if (props.isImage) {
         bgImageContainer = (
             <div id='bgImageContainer' style={{ backgroundImage: `url(${bgImage})` }}>
@@ -20,6 +25,7 @@ const Layout: React.FC<layoutProps> = props => {
 
     return (
         <div id='layout-container'>
+            <Nav />
             {bgImageContainer}
         </div>
     )

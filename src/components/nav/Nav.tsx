@@ -8,7 +8,7 @@ import Login from '../login/Login';
 
 const Nav: React.FC = () => {
 
-    const {isAuth, logIn} = useContext(LoginContext);
+    const {isAuth} = useContext(LoginContext);
 
     return (
         <div id='navigation'>
@@ -16,7 +16,7 @@ const Nav: React.FC = () => {
                 <ul>
                     <li><Link to='/'>Home</Link></li>
                     <li><Link to='/docs'>Documentation</Link></li>
-                    {isAuth ? <li><Link to='/useddata'>Used Data</Link></li>: null}
+                    {isAuth[0] ? <li><Link to='/userdata'>User Data</Link></li>: null}
                 </ul>
             </nav>
                 <Login/>

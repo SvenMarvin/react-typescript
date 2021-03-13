@@ -1,0 +1,6 @@
+[
+    {"user": "test", "pw": "test"},
+    {"user": "12345", "pw": 12345},
+    {"user": "root", "pw": "root"},
+    {"user": "letmein", "pw": "letmein"}
+]
