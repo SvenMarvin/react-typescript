@@ -4,3 +4,25 @@
     transform: translate(0, -50%);
     left: 10%;
 }
+
+.snowButton{
+    position: absolute;
+    bottom: 15%;
+    left: 10%;
+    button{
+        background-color: white;
+        color: black;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        transition: 200ms;
+        &:hover{
+            color: white;
+            background-color: black;
+        }
+        &:active{
+            background-color: green;
+        }
+    }
+}
